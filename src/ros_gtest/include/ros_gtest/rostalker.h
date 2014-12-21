@@ -15,6 +15,4 @@ public:
     void talk();
     int add(int, int);
 };
-
-
 #endif

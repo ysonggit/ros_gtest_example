@@ -11,11 +11,13 @@ int add(int a, int b){
 
 // a dummy test calling gtest's assert_srteq
 // this test is not related with any ros nodeHandle
-TEST(NumberCmpTest, Dummy){
+TEST(NumberCmpTest, ShouldPass){
     ASSERT_EQ(3, add(1,2));
-    ASSERT_EQ(INT_MAX, add(INT_MAX, 1));
 }
 
+TEST(NumberCmpTest, ShouldFail){
+    ASSERT_EQ(INT_MAX, add(INT_MAX, 1));
+}
 
 TEST(RtTest, TalkerFunction){
     RosTalker rt;

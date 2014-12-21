@@ -3,8 +3,6 @@
 #include <ros/ros.h>
 #include "std_msgs/String.h"
 #include <string>
-
-
 class RosListener{
 public:
     RosListener(){
@@ -15,6 +13,4 @@ public:
     void msgCallback(const std_msgs::String & );
     std::string received_msg;
 };
-
-
 #endif
